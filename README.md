@@ -1,3 +1,0 @@
-# guitarschoolsite
-
-My second website

@@ -1,0 +1,364 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+.main_section
+    min-height: 642px
+    background: url("../img/back1.png") center/cover no-repeat
+
+    padding-top: 23px
+
+    &__logo
+        filter: drop-shadow(5px 4px 9px rgba(0, 0, 0, 0.25))
+        width: 157px
+    
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 81px
+        align-items: center;
+    
+    &__content-container
+        display: flex
+        position: relative
+        flex-direction: row
+    
+    &__first-ellipse
+        position: absolute
+        top: 129px
+        right: 34px
+
+.nav-menu
+    filter: drop-shadow(5px 4px 9px rgba(0, 0, 0, 0.25))
+
+    &__list
+        display: flex
+        flex-direction: row
+    
+    &__list-item
+        margin-right: 74px
+        font-size: 18px
+        font-family: 'Roboto';
+        font-weight: 500;
+        color: white;
+        &:last-child
+            margin-right: 0px
+        
+        a
+            text-decoration: none
+            color: white
+
+.left-wrapper
+    position: relative
+
+    &__image
+        position: relative
+        z-index: 2
+
+    &__orange
+        position: absolute
+
+        z-index: 1
+
+        left: -60px;
+        top: 170px;
+
+        width: 606.51px;
+        height: 215.24px;
+
+        background: linear-gradient(0deg, rgba(237, 123, 80, 0.7), rgba(237, 123, 80, 0.7));
+        box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.23);
+        backdrop-filter: blur(20px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 200px;
+        transform: rotate(-51.43deg);
+    &__blue
+        position: absolute
+
+        left: -100px;
+        top: 160px;
+
+        width: 536.68px;
+        height: 215.24px;
+
+        background: linear-gradient(0deg, rgba(72, 138, 234, 0.5), rgba(72, 138, 234, 0.5));
+        box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.23);
+        backdrop-filter: blur(20px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 200px;
+        transform: rotate(-75.49deg);
+    &__gray
+        position: absolute
+
+        left: -7px;
+        top: 230px;
+
+        width: 572.65px;
+        height: 215.24px;
+
+        background: linear-gradient(0deg, rgba(203, 203, 203, 0.5), rgba(203, 203, 203, 0.5));
+        box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.23);
+        backdrop-filter: blur(20px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 200px;
+        transform: rotate(-30.67deg);
+
+.icons
+    display: inline-flex
+
+    filter: drop-shadow(5px 4px 9px rgba(0, 0, 0, 0.25));
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+
+        cursor: pointer
+
+        margin-right: 14px
+        &:last-child
+            margin-right: 0px
+
+.icons2
+    display: inline-flex
+
+    filter: drop-shadow(5px 4px 9px rgba(0, 0, 0, 0.25));
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 79px
+        height: 79px
+
+        cursor: pointer
+
+        margin-right: 14px
+        &:last-child
+            margin-right: 0px
+
+.title
+    font-size: 96px
+    position: relative
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white
+
+    &__line
+        position: absolute
+        width: 101px;
+        height: 0px;
+        margin: 0
+        border: 0
+        border-top: 4px solid #FFFFFF;
+        border-radius: 100px
+    
+    &__line2
+        position: absolute
+        width: 67px;
+        height: 0px;
+        border-radius: 100px
+        margin: 0
+        border: 0
+        border-top: 4px solid #FFFFFF;
+    
+    &__line3
+        position: absolute
+        left: 92px;
+        width: 10px;
+        height: 0px;
+        border-radius: 100px
+        margin: 0
+        border: 0
+        border-top: 4px solid #FFFFFF;
+    
+    &__line4
+        position: absolute
+        width: 83px;
+        height: 0px;
+        border-radius: 100px
+        margin: 0
+        border: 0
+        border-top: 4px solid #FFFFFF;
+    
+    &__line5
+        position: absolute
+        width: 36px;
+        height: 0px;
+        border-radius: 100px
+        margin: 0
+        border: 0
+        border-top: 4px solid #FFFFFF;
+
+    &__line6
+        position: absolute
+        width: 83px;
+        height: 0px;
+        border-radius: 100px
+        margin: 0
+        border: 0
+        border-top: 4px solid #FFFFFF;
+
+.right-wrapper
+    width: 409px
+
+    position: absolute
+    top: 150px
+    right: 76px
+
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    
+    &__title
+        margin-bottom: 13px
+
+    &__text
+        font-size: 20px
+        font-family: 'Roboto';
+        color: white
+        margin-bottom: 35px
+
+.buttons
+    display: inline-flex
+    
+    &__text
+        font-size: 24px
+        font-family: 'Roboto';
+        color: white
+
+    &__icon-btn
+        filter: drop-shadow(5px 4px 9px rgba(0, 0, 0, 0.25));
+
+        display: inline-flex
+        align-items: center
+
+        cursor: pointer
+
+        img
+            margin-right: 16px
+    
+    &__main-btn
+        width: 213px;
+        height: 59px;
+
+        cursor: pointer
+
+        border: none
+
+        background: #488AEA;
+        border-radius: 100px;
+
+        margin-right: 45px
+
+        filter: drop-shadow(5px 4px 9px rgba(0, 0, 0, 0.25));
+
+        font-size: 16px
+
+        font-family: 'Roboto';
+
+        color: white
+
+.second-section
+    background: url("../img/back2.png") center/cover no-repeat
+    min-height: 700px
+    padding-top: 37px
+
+    &__title
+        margin-bottom: 40px
+
+    &__img-container
+        display: flex
+
+        justify-content: space-between
+
+        img
+            backdrop-filter: blur(20px);
+            border-radius: 42px;
+            filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.23));
+            width: 360px
+    
+    &__img-container2
+        display: flex
+
+        justify-content: space-between
+
+        div
+            position: relative
+            left: -52px
+            top: -67px
+            height: 261px
+
+.third-section
+    background: url("../img/back3.png") center/cover no-repeat
+    min-height: 700px
+    padding-top: 37px
+
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+
+    &__text
+        font-size: 23px
+        font-family: 'Roboto'
+        width: 565px
+        color: white
+        font-weight: 300
+
+    &__title
+        margin-bottom: 34px
+    
+    &__title2
+        font-size: 64px
+        margin-bottom: 39px
+    
+    &__right-wrapper
+        
+
+    &__left-wrapper
+        padding-top: 45px
+        padding-left: 55px
+
+        width: 659px;
+        height: 578px;
+
+        background: linear-gradient(250.79deg, rgba(255, 255, 255, 0.2) -0.91%, rgba(255, 255, 255, 0) 100%);
+        filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.23));
+        backdrop-filter: blur(20px);
+
+        border-radius: 20px;
+
+.footer
+    display: flex
+    flex-direction: row
+    align-items: center;
+    background-color: #101010
+    min-height: 425px
+
+    &__title
+        margin-bottom: 17px
+
+    &__container
+        display: flex
+        justify-content: flex-end
+    
+    &__text-icons
+        display: flex
+        flex-direction: column
+        align-items: center
